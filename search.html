@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/red bus.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="search.css" />
+    <title>Buffer Bus</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="https://res.cloudinary.com/dgbzexbd1/image/upload/v1714410945/jstp0sibfayl0olcawff.png" alt="logo" /><span>Buffer</span>Bus</a>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login<i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <section id="welcome-search">
+            <div class="welcome-search">
+                <h1>Search for Bus Tickets</h1>
+                <img src="https://res.cloudinary.com/dgbzexbd1/image/upload/v1714410948/rruwimmuxmumjypfheap.jpg" />
+                <p>Use our search tool to find available bus tickets.</p>
+            </div>
+        </section>
+        <form class="journey-form">
+            <label for="from">From:</label>
+            <input type="text" id="from" placeholder="Enter start" name="from" list="starting" />
+            <datalist id="starting">
+                <option value="Chennai Central"></option>
+                <option value="Madurai"></option>
+                <option value="Trichy"></option>
+                <option value="Tirunelveli "></option>
+                <option value="Coimbatore"></option>
+            </datalist>
+
+            <label for="to">To:</label>
+            <input type="text" placeholder="Enter Destination" id="to" name="to" list="Destination" />
+            <datalist id="Destination">
+                <option value="Madurai Meenakshi Amman Temple"></option>
+                <option value="Kanyakumari"></option>
+                <option value="Vellore City"></option>
+                <option value="Tiruvanamalai "></option>
+                <option value="Pondichery"></option>
+            </datalist>
+
+            <label for="date">Journey Date:</label>
+            <input type="date" value="2019-04-15" id="date" name="date" />
+            <button type="submit">Search</button>
+        </form>
+        <section>
+            <div class="bus-list">
+                <h4>Popular Routes and Bus schedules</h4>
+                <table class="list-tabel" style="width: 80%">
+                    <th>Bus Name</th>
+                    <th>Timing</th>
+                    <th>Starting Point</th>
+                    <th>Destination</th>
+                    <th>Estimated Reach Time</th>
+                    <th></th>
+                    <tr>
+                        <td>Chennai Express</td>
+                        <td>7:00 AM</td>
+                        <td>Chennai Central</td>
+                        <td>Madurai Meenakshi Amman Temple</td>
+                        <td>11:30 AM</td>
+                        <td>
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Madurai Metro</td>
+                        <td>8:30 AM</td>
+                        <td>Madurai Maiyappan Nagar</td>
+                        <td>Chennai Ariyappan Koil</td>
+                        <td>12:45 PM</td>
+                        <td>
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tiruchi Green Line</td>
+                        <td>9:15 AM</td>
+                        <td>Tiruchi Old Fort</td>
+                        <td>Coimbatore Temple</td>
+                        <td>1:45 PM</td>
+                        <td>
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coimbatore Madurai Kanakaa</td>
+                        <td>10:00 AM</td>
+                        <td>Coimbatore Mamallapuram</td>
+                        <td>Madurai Meenakshi Amman Temple</td>
+                        <td>2:30 PM</td>
+                        <td>
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tirunelveli Express</td>
+                        <td>11:00 AM</td>
+                        <td>Tirunelveli City</td>
+                        <td>Chennai Ariyappan Koil</td>
+                        <td>3:45 PM</td>
+                        <td>
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rameswaram Red Rocket</td>
+                        <td>12:30 PM</td>
+                        <td>Rameswaram Mandapam</td>
+                        <td>Kanyakumari Boat Land</td>
+                        <td>4:45 PM</td>
+                        <td>
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Thanjavur Sunshade</td>
+                        <td>2:00 PM</td>
+                        <td>Thanjavur Sunshade</td>
+                        <td>Madurai Palaiyakottai</td>
+                        <td>6:00 PM</td>
+                        <td>
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kanchipuram Golden Arrow</td>
+                        <td>3:15 PM</td>
+                        <td>Kanchipuram City</td>
+                        <td>Chennai Ariyappan Koil</td>
+                        <td>7:30 PM</td>
+                        <td>
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nagapattinam Liberty Express</td>
+                        <td>4:00 PM</td>
+                        <td>Nagapattinam Sivagangai</td>
+                        <td>Madurai Meenakshi Amman Temple</td>
+                        <td>8:45 PM</td>
+                        <td>
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Theni Sun Rise</td>
+                        <td>5:30 PM</td>
+                        <td>Theni City</td>
+                        <td>Kovilpatti Railway Station</td>
+                        <td>10:00 PM</td>
+                        <td>
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vellore Starlight Express</td>
+                        <td>6:45 PM</td>
+                        <td>Vellore City</td>
+                        <td>Chennai Central</td>
+                        <td>11:30 PM</td>
+                        <td>
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tiruchennai Ocean Wave</td>
+                        <td>7:45 PM</td>
+                        <td>Tiruchennai Malai</td>
+                        <td>Nagapattinam Shore</td>
+                        <td>1:15 AM (next day)</td>
+                        <td>
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Neyveli Twilight Cruiser</td>
+                        <td>9:00 PM</td>
+                        <td>Neyveli City</td>
+                        <td>Kadalur Sathuranga Koil</td>
+                        <td>2:30 AM (next day)</td>
+                        <td>
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coimbatore Aurora Express</td>
+                        <td>10:15 PM</td>
+                        <td>Coimbatore City</td>
+                        <td>Chennai Ariyappan Koil</td>
+                        <td>3:45 AM (next day)</td>
+                        <td>
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-main">
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <div class="contact-details">
+                <p> <i class="fa-solid fa-phone"></i> +91 68946 18348</p> 
+                <p><i class="fa-solid fa-envelope"></i> bufferbus@gmail.com</p>                </div> 
+            </div>
+            <div class="social">
+                <h3>Social Media</h3>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a>
+                </div>
+            </div>
+            <div class="quick-links">
+                <h3>Info Links</h3>
+                <div class="social-info">
+                    <a href="">Terms and Conditions</a>
+                    <a href="">Privacy</a>
+                    <a href="">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>Copyright © 2023 Buffer Bus. All rights reserved.</p>
+        </div>   
+    </footer>
+</body>
+
+</html>

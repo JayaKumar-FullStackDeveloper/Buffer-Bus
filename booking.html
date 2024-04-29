@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/red bus.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="booking.css">
+    <title>Buffer Bus</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="https://res.cloudinary.com/dgbzexbd1/image/upload/v1714410945/jstp0sibfayl0olcawff.png" alt="logo"><span>Buffer</span>Bus</a>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login<i class="fa-solid fa-user"></i></a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <section id="welcome-search">
+            <div class="welcome-title">
+                <h1>Book Your Bus Tickets</h1>
+                <img src="https://res.cloudinary.com/dgbzexbd1/image/upload/v1714410946/k5xebkmm35ektixps0wb.jpg" />
+                <p>Fill in your details to complete the booking.</p>
+            </div>
+        </section>
+        <!-- <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required><br><br>
+            
+                <label for="ph.no">Phone Number:</label>
+                <input type="tel" id="ph.no" name="ph.no" maxlength="10" placeholder="Enter Your Phone Number" required> &nbsp;
+                <input type="tel" id="otp" maxlength="6" placeholder="Enter six digith OTP Code" required> -->
+    
+        <section class="booking-body">
+            <div class="filter-container">
+                <h3>Filters</h3>
+                <div class="filter-content">
+                    <h5>AC</h5>
+                    <div class="ac">
+                        <p><i class="fa-solid fa-snowflake"></i>AC</p>
+                        <p><i class="fa-solid fa-fire-flame-curved"></i>Non AC</p>
+                    </div>
+                    <h5>Price Range</h5>
+                    <div class="ac">
+                        <span>Rs.500</span><input type="range" min="1" max="100"><span>Rs.4000</span>
+                    </div>
+                    <h5>Pick Up Time</h5>
+                    <div class="ac-pick">
+                        <p>6AM to 11AM</p>
+                        <p>11AM to 6PM</p>
+                    </div>
+                    <div class="ac-pick">
+                        <p>6PM to 11PM</p>
+                        <p>11PM to 6AM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-details">
+                <h4 class="booking-list">Your Journey Details</h4>
+                <div class="main-content-booking">
+                    <div class="left-booking">
+                        <div class="bus-details">
+                            <div class="busname">
+                                <h4>IntrCity SmartBus (Washroom onboard)</h4>
+                                <p>VE AC Seater/Sleeper (2 + 1)</p>
+                            </div>
+                            <div class="bustime">
+                                <p>19 May</p>
+                                <h4>21:40</h4>
+                                <p>Chennai Central</p>
+                            </div>
+                            <div class="bustime">
+                                <h3>12:100 Hrs</h3>
+                            </div>
+                            <div class="bustime">
+                                <p>20 May</p>
+                                <h4>09:50</h4>
+                                <p>Madurai</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-amount">
+                        <p>Sarting at</p>
+                        <p><strike>Rs2427</strike></p>
+                        <h3>Rs.2417</h3>
+                        <span>Save Rs.10</span>
+                    </div>
+                </div>
+                <div class="main-content-booking">
+                    <div class="left-booking">
+                        <div class="bus-details">
+                            <div class="busname">
+                                <h4>Orange Tours and Travels</h4>
+                                <p>SCANIA AC Multiaxle Sleeper (2 + 1)</p>
+                            </div>
+                            <div class="bustime">
+                                <p>21 May</p>
+                                <h4>17:45</h4>
+                                <p>Chennai Central</p>
+                            </div>
+                            <div class="bustime">
+                                <h3>11:00 Hrs</h3>
+                            </div>
+                            <div class="bustime">
+                                <p>22 May</p>
+                                <h4>04:45</h4>
+                                <p>Madurai</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-amount">
+                        <p>Sarting at</p>
+                        <p><strike>Rs.1600</strike></p>
+                        <h3>Rs.1550</h3>
+                        <span>Save Rs.50</span>
+                    </div>
+                </div>
+                <div class="main-content-booking">
+                    <div class="left-booking">
+                        <div class="bus-details">
+                            <div class="busname">
+                                <h4>Morning Star Travels</h4>
+                                <p>AC Sleeper (2 + 1)</p>
+                            </div>
+                            <div class="bustime">
+                                <p>21 May</p>
+                                <h4>20:10</h4>
+                                <p>Chennai Central</p>
+                            </div>
+                            <div class="bustime">
+                                <h3>9:50 Hrs</h3>
+                            </div>
+                            <div class="bustime">
+                                <p>22 May</p>
+                                <h4>06:00</h4>
+                                <p>Madurai</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-amount">
+                        <p>Sarting at</p>
+                        <p><strike>Rs3427</strike></p>
+                        <h3>Rs.3317</h3>
+                        <span>Save Rs.100</span>
+                    </div>
+                </div>
+                <div class="payments">
+                    <div class="left-option">
+                        <h3>Payment Options</h3>
+                        <h4><img src="https://imgak.mmtcdn.com/payment-ui-service/images/payment/upi_paymode.png"
+                                alt="">UPI Options</h4>
+                        <h4><img src="https://imgak.mmtcdn.com/payment-ui-service/images/payment/netbanking_paymode.png"
+                                alt="">Net Banking</h4>
+                        <h4><img src="https://imgak.mmtcdn.com/payment-ui-service/images/payment/gpay.png" alt="">
+                            Google Pay</h4>
+                        <h4><img src="https://imgak.mmtcdn.com/payment-ui-service/images/payment/card_paymode.png"
+                                alt="">Credit/Debit/Atm Card</h4>
+                    </div>
+                    <div class="right-option">
+                        <form action="">
+                            <p>Choose a bank</p>
+                            <select id="banks" name="banks">
+                                <option disabled selected>Select a bank</option>
+                                <option value="hdfc">HDFC Bank</option>
+                                <option value="icici">ICICI Bank</option>
+                                <option value="axis">Axis Bank</option>
+                                <option value="sbi">State Bank of India (SBI)</option>
+                                <option value="kvb">Karur Vysya Bank (KVB)</option>
+                                <option value="indianbank">Indian Bank</option>
+                                <option value="canarabank">Canara Bank</option>
+                            </select>
+                            <div class="cards">
+                                <label for="card">Holder Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter a name">
+                                <label for="card">Card Number</label>
+                                <input type="number" id="card" name="card" placeholder="xxxx-xxxx-xxxx" max="12">
+                                <div class="expiry-date">
+                                <label for="expiry">Expiry Date</label>
+                                <input type="date" id="expiry" name="expiry">
+                                <label for="cvv">CVV</label>
+                                <input type="number" id="cvvnumber" name="cvvnumber"></div>
+                            </div>
+                            <button type="submit">Pay Now</button>
+                        </form>
+                    </div>
+                </div>
+
+        </section>
+
+    </main>
+  
+    <!-- Footer -->
+    <footer>
+        <div class="footer-main">
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <div class="contact-details">
+                <p> <i class="fa-solid fa-phone"></i> +91 68946 18348</p> 
+                <p><i class="fa-solid fa-envelope"></i> bufferbus@gmail.com</p>                </div> 
+            </div>
+            <div class="social">
+                <h3>Social Media</h3>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a>
+                </div>
+            </div>
+            <div class="quick-links">
+                <h3>Info Links</h3>
+                <div class="social-info">
+                    <a href="">Terms and Conditions</a>
+                    <a href="">Privacy</a>
+                    <a href="">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>Copyright © 2023 Buffer Bus. All rights reserved.</p>
+        </div>   
+    </footer>
+</body>
+
+</html>
